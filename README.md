@@ -18,3 +18,9 @@ Client side:
 - To send a message again, both users request a truly random one time pad key again and repeat the process
 
 Open for improved ideas & implementation. 
+
+OTP requirements:
+1) Key gets destroyed
+2) Truly random (RDRAND and RDSEED are Intel Secure Key technology)
+3) Plaintext = key length, 32 bytes, but can be increased
+4) Key is securely distributed with Kyber/Dilithium. 
